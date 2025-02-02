@@ -1,3 +1,4 @@
 # responsive_navbar
 
- ![Screenshot](demo.mp4/)
+ ![Screenshot](s1.png/)
+ ![Screenshot](s2.png/)
