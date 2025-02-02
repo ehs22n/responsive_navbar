@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.items{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+}
+.navbar{
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    box-shadow: 0 1px 10px;
+}
+.navbar li{
+    height: 50px;
+    margin-right: 30px;
+    
+}
+
+.items a{
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+    text-decoration: none;
+    padding:  0 30px;
+    transition: 0.2s ease;
+}
+.item-menu a{
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+.navbar span{
+    color:   blue;
+}
+
+
+#logo{
+    
+    position: absolute;
+    left: 0;
+    
+}
+
+.navbar a:hover{
+    background-color:white ; 
+}
+.item-menu a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    
+}
+
+.close {
+    
+    position: absolute;
+
+}
+
+
+.item-menu li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.item-menu a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+.item-menu {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hamburger-menu{
+
+    display: none;
+}
+
+@media(max-width: 800px){
+.hamburger-menu{
+    display: flex;
+}
+.HideOnMobile{
+    display: none;
+}
+
+
+}
+
+
+
+#text{
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    top: 8rem;
+    padding: 30px;
+    font-size: 50px;
+    text-shadow: 3px 3px 5px rgb(0,0, 0);
+}
+.color{
+    text-shadow: 3px 3px 5px rgb(0,0, 0);
+    color: green;
+}
+
+.size{
+    color: aqua;
+    /* display: inline-block; */
+    text-shadow: 3px 3px 5px rgb(0,0, 0);
+    font-size: 15px;
+    position: relative;
+    top:2rem;
+}
+
+
